@@ -1,0 +1,21 @@
+html {
+  // allows users to control zoom sizing
+  font-size: 100%; 
+  // include padding in final element size width
+  box-sizing: border-box;
+}
+
+// inherit border-box to all elements from the html element
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  // template settings
+  margin: 0;
+  padding: 0;
+  font-family: 'Public Sans', sans-serif;
+  
+  // give more room between lines
+  line-height: 1.3;
+}
