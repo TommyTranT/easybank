@@ -52,3 +52,16 @@ button, .button {
   color: white;
   font-weight: 400;
 }
+
+// Visibility
+.hide-for-mobile { // hide from medium and down
+  @include breakpoint-down(medium){
+    display: none;
+  }
+}
+
+.hide-for-desktop { // hide for desktop and up
+  @include breakpoint-up(large){
+    display: none;
+  }
+}
