@@ -3,7 +3,8 @@
   // styles go here
 }
 
-// breakpoints means at this point and up, use these styles
+// SASS Maps
+// breakpoints means at this point and bigger, use these styles
 // 640px, 1024px, 1400px
 $breakpoints-up: ("medium": "40em", "large": "64em", "xlarge": "87.5em");
 
