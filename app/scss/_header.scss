@@ -1,13 +1,14 @@
 .header {
 
   nav {
-    padding: 24px;
+    padding: 1.0625rem 1.5rem; // p-top & bottom: 17px, left & right: 24px. convert to rem
   }
 
   &__logo {
 
     img {
-
+      width: 8.8125rem; //141px / 16 = rem size
+      height: 1.375rem; //22px / 16 = rem size
     }
 
   }
@@ -28,11 +29,34 @@
 
   &__links {
     a {
+      position: relative;
       font-size: $font-sm;
       color: $grayishBlue;
+      transition: color 200ms ease-in-out; // when changing color do this transistion
 
       &:not(:last-child){ //adds margin to all links except last one
-        margin-left: 32px;
+        margin-right: 32px;
+      }
+
+      &::before { // adds bottom line for each link. inserts something before each content
+        content: "";
+        display: block;
+        position: absolute;
+        height: 5px;
+        left: 0;
+        right: 0;
+        bottom: -30px;
+        background: linear-gradient(to right, $limeGreen, $brightCyan);
+        opacity: 0; // makes it invisible
+        transition: opacity 200ms ease-in-out;
+      }
+      
+      &:hover {
+        color: $darkBlue; // change font color when hovered over
+        
+        &::before { // when element is being hovered, show background color
+          opacity: 1;
+        }
       }
     }
   }
