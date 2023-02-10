@@ -91,7 +91,7 @@
 
 .overlay {
   position: fixed;
-  top: 0px;
+  top: 3.75rem; // to not cover header, make this the height of header which is 60px / 16 = 3.75rem
   right: 0px;
   bottom: 0px;
   left: 0px;
