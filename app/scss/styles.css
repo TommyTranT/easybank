@@ -122,9 +122,8 @@ button, .button {
 .overlay {
   position: fixed;
   top: 0px;
+  right: 0px;
   bottom: 0px;
   left: 0px;
-  right: 0px;
-  background-color: hsl(233deg, 26%, 24%);
-  background-image: linear-gradient(hsl(233deg, 26%, 24%), transparents);
+  background-image: linear-gradient(hsl(233deg, 26%, 24%), transparent);
 }/*# sourceMappingURL=styles.css.map */
