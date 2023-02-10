@@ -1,3 +1,27 @@
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fade-in 300ms ease-in-out forwards;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.fade-out {
+  animation: fade-out 300ms ease-in-out forwards;
+}
+
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -56,13 +80,13 @@ button, .button {
   }
 }
 
-.header.open > span:first-child {
+.header.open .header__menu > span:first-child {
   transform: rotate(45deg);
 }
-.header.open > span:nth-child(2) {
+.header.open .header__menu > span:nth-child(2) {
   opacity: 0;
 }
-.header.open > span:last-child {
+.header.open .header__menu > span:last-child {
   transform: rotate(-45deg);
 }
 .header .overlay {
