@@ -33,3 +33,5 @@ for screen size 1024 pixels / 16 = 64em
 * Browsers will default h1 font to bold but wont show it in the dev tools
 
 * for header fronts you want to add line-height to 1 and for other longer text you want it to be bigger like 1.3 depending on the design
+
+* before and after. what ever image is in after will appear ontop of before
