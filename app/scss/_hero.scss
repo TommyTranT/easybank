@@ -1,0 +1,39 @@
+.hero {
+
+  &__image {
+    position: relative;
+    background-image: url('/images/bg-intro-mobile.svg');
+    background-size: cover; // keeps image aspect ratio
+    background-repeat: no-repeat;
+    background-position: center center; // keeps image centered in the div
+    min-height: 17.5rem; // 280px
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%; // to match the parent width
+      height: 100%; // to match the parent height
+      background-image: url('/images/image-mockups.png');
+      background-size: 93%; // reduce image size while keeping it centered
+      background-repeat: no-repeat;
+      background-position: center bottom; // makes image bottom align with div    
+    }
+  }
+
+  &__text {
+    text-align: center;
+    
+    h1 {
+      font-weight: 300; // need to add this because it defaults to bold
+      font-size: 2.31rem; // 37px
+      line-height: 1.15; // basically spacing between lines
+      color: $darkBlue;
+      margin-bottom: 1.5rem; // 24px
+    }
+
+    p {
+      line-height: 1.5;
+      margin-bottom: 2.25rem; // 36px
+    }
+  }
+}

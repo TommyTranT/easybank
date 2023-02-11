@@ -15,7 +15,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Public Sans', sans-serif;
-  font-size: $font-med;
+  font-size: $font-sm;
   font-weight: 300;
   color: $grayishBlue;
   // give more room between lines
@@ -26,15 +26,24 @@ body {
   }
 }
 
-// Spacing
-.container {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+h1, h2, h3 { // removes any default styling from browser
+  font-weight: 300;
+  line-height: 1.15;
+  margin-top: 0px;
 }
 
 a,a:visited,a:hover {
   text-decoration: none;
 }
+
+// Spacing
+.container {
+  padding-top: 2.25rem;
+  padding-right: 1.5rem;
+  padding-bottom: 2.25rem;
+  padding-left: 1.5rem;
+}
+
 // custom flexbox class
 .flex {
   display: flex;
@@ -54,6 +63,7 @@ a,a:visited,a:hover {
 
 // Button
 button, .button {
+  display: inline-block;
   padding: 0.875rem 2.1875rem; // adds height and width to the button. button is 14 pixels / 16 = 0.875rem
   background: linear-gradient(to right, $limeGreen, $brightCyan);
   border: 0;
@@ -61,7 +71,15 @@ button, .button {
   cursor: pointer;
   color: white;
   font-weight: 400;
+  font-size: $font-sm;
+  transition: opacity 300ms ease-in-out;
+
+  &:hover {
+    opacity: 0.75;
+  }
 }
+
+
 
 // Visibility
 .hide-for-mobile { // hide from medium and down
