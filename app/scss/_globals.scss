@@ -30,10 +30,20 @@ body {
   }
 }
 
+
+// Text
 h1, h2, h3 { // removes any default styling from browser
   font-weight: 300;
   line-height: 1.15;
   margin-top: 0px;
+}
+
+h2 {
+  font-size: 1.875rem;
+
+  @include breakpoint-up(large){ // Applies to large screen only
+    font-size: 2.25rem;
+  }
 }
 
 a,a:visited,a:hover {
