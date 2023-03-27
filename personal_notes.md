@@ -1,6 +1,6 @@
 https://www.youtube.com/watch?v=aoQ6S1a32j8
 
-2:47:21
+2:51:34
 
 * If you need to add flex to everything, just make it a class
 

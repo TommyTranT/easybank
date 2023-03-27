@@ -4,6 +4,7 @@
 
     @include breakpoint-up(medium) { // Apply to medium widths and UP
       display: flex;
+      flex-wrap: wrap; // wraps the features to fit in window
     }
 
   }
@@ -13,7 +14,7 @@
     padding: 0.9375rem;
 
     @include breakpoint-up(medium) {
-      flex: 1 0 50% // fit item 50% of screen so shows 2 items in tablet mode
+      flex: 0 0 50% // fit item 50% of screen so shows 2 items in tablet mode
     }
 
     @include breakpoint-up(large) {
