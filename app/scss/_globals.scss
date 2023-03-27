@@ -32,18 +32,35 @@ body {
 
 
 // Text
-h1, h2, h3 { // removes any default styling from browser
-  font-weight: 300;
-  line-height: 1.15;
+h1, h2, h3 { 
+  font-weight: 300; // need to add this because it defaults to bold
+  line-height: 1.15; // basically spacing between lines
+  color: $darkBlue;
   margin-top: 0px;
+}
+
+h1 {
+  font-size: 2.31rem; // 37px
+  margin-bottom: 1.5rem; // 24px
+
+  @include breakpoint-up(large){
+    font-size: $font-xlg;
+  }
 }
 
 h2 {
   font-size: 1.875rem;
+  margin-bottom: 1.5625rem;
 
   @include breakpoint-up(large){ // Applies to large screen only
     font-size: 2.25rem;
+    margin-bottom: 2.25rem;
   }
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 2.25rem;
 }
 
 a,a:visited,a:hover {

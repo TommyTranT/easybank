@@ -68,16 +68,34 @@ body.noscroll {
 h1, h2, h3 {
   font-weight: 300;
   line-height: 1.15;
+  color: hsl(233, 26%, 24%);
   margin-top: 0px;
+}
+
+h1 {
+  font-size: 2.31rem;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 64em) {
+  h1 {
+    font-size: 3.25rem;
+  }
 }
 
 h2 {
   font-size: 1.875rem;
+  margin-bottom: 1.5625rem;
 }
 @media (min-width: 64em) {
   h2 {
     font-size: 2.25rem;
+    margin-bottom: 2.25rem;
   }
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 2.25rem;
 }
 
 a, a:visited, a:hover {
@@ -315,18 +333,6 @@ button:hover, .button:hover {
     flex: 2;
     order: 1;
     text-align: left;
-  }
-}
-.hero__text h1 {
-  font-weight: 300;
-  font-size: 2.31rem;
-  line-height: 1.15;
-  color: hsl(233, 26%, 24%);
-  margin-bottom: 1.5rem;
-}
-@media (min-width: 64em) {
-  .hero__text h1 {
-    font-size: 3.25rem;
   }
 }
 .hero__text p {
