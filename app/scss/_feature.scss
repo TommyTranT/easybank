@@ -1,5 +1,13 @@
 .feature {
 
+  &__intro{
+    margin-bottom: 3.75rem;
+
+    @include breakpoint-up(large) {
+      width: 60%;
+    }
+  }
+
   &__grid {
 
     @include breakpoint-up(medium) { // Apply to medium widths and UP
@@ -23,6 +31,12 @@
   }
 
   &__icon {
+
+    margin-bottom: 1.875rem;
+
+    @include breakpoint-up(large) {
+      margin-bottom: 2.75rem;
+    }
 
   }
 
