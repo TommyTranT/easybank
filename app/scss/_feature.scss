@@ -34,7 +34,7 @@
     }
 
     @include breakpoint-up(large) {
-      flex: 1; // fit item in the width
+      flex: 1; // fits all items in one line
     }
   }
 
