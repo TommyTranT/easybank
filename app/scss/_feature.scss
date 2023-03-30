@@ -48,13 +48,12 @@
     font-weight: 300; // need to add this because it defaults to bold
     line-height: 1.15; // basically spacing between lines
     color: $darkBlue;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   
 
     @include breakpoint-up(large) {
       font-size: 1.5rem;
-      margin-bottom: 2.125rem;
-
+      margin-bottom: 1.5rem;
     }
 
   }
