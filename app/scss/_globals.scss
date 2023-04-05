@@ -20,6 +20,7 @@ body {
   color: $grayishBlue;
   // give more room between lines
   line-height: 1.3;
+  overflow-x: hidden; // Makes you not able to scroll left and right
   min-height: 300vh; // lets you scroll more regardless of content
 
   @include breakpoint-up(large){
