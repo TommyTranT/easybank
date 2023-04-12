@@ -23,9 +23,10 @@
 
   }
 
-  // &__item {
-
-  // }
+  &__item {
+    border-radius: 0.3125rem;
+    overflow: hidden; // This is required to show the curve of the corners
+  }
 
   &__image{
     height: 12.5rem;
@@ -34,9 +35,14 @@
     background-position: center center;
   }
 
-  // &__text{
+  &__text{
+    background-color: $white;
+    padding: 1.875rem 1.875rem 2.5rem 1.875rem;
 
-  // }
+    @include breakpoint-up(medium){
+      padding: 1.875rem 1.5625rem;
+    }
+  }
 
   // &__author{
 
