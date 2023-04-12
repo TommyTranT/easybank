@@ -17,9 +17,8 @@ body {
   font-family: 'Public Sans', sans-serif;
   font-size: $font-sm;
   font-weight: 300;
-  color: $grayishBlue;
-  // give more room between lines
-  line-height: 1.3;
+  color: $grayishBlue;  
+  line-height: 1.3; // give more room between lines
   overflow-x: hidden; // Makes you not able to scroll left and right
   min-height: 300vh; // lets you scroll more regardless of content
 
