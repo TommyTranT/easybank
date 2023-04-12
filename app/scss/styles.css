@@ -316,9 +316,6 @@ button:hover, .button:hover {
     background-image: none;
   }
 }
-.hero__image::before, .hero__image::after {
-  border: 1px solid magenta;
-}
 @media (min-width: 64em) {
   .hero__image::before {
     content: "";
