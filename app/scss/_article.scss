@@ -11,6 +11,7 @@
   &__grid {
     display: grid;
     grid-template-columns: 1fr; 
+    gap: 1.875rem; // adds spacing between each item
 
     @include breakpoint-up(medium){
       grid-template-columns: repeat(2, 1fr);
@@ -26,9 +27,12 @@
 
   // }
 
-  // &__image{
-
-  // }
+  &__image{
+    height: 12.5rem;
+    background-size: cover; // Image covers whole div
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 
   // &__text{
 
