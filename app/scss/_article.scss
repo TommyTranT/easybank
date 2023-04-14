@@ -18,7 +18,7 @@
     }
 
     @include breakpoint-up(large){
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(4, 1fr); 
     }
 
   }
@@ -47,11 +47,14 @@
 
   &__author{
     font-size: 0.625rem;
+    margin-bottom: 1rem;
   }
 
   &__title{
     font-size: 1.0625rem;
+    line-height: 1.2;
     color: $darkBlue;
+    margin-bottom: 1rem;
   }
 
   &__description{
