@@ -500,8 +500,22 @@ button:hover, .button:hover {
 .footer__social {
   margin-bottom: 1.875rem;
 }
+.footer__social a {
+  display: inline-block;
+}
+.footer__social a:not(:last-child) {
+  margin-right: 1rem;
+}
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .footer__links.col2 {
   margin-bottom: 1.875rem;
+}
+.footer a {
+  line-height: 2.25;
 }
 .footer__cta a.button {
   margin-bottom: 1.875rem;
