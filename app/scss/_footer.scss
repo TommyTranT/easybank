@@ -13,7 +13,7 @@
     grid-template-rows: repeat(2, 1fr);; // 2 rows with the same height
     grid-template-areas: 
       "logo links1 links2 cta"
-      "social links1 links2 cta";
+      "social links1 links2 copyright";
     justify-items: start; // makes content in each grid to the left
   }
 
@@ -105,8 +105,11 @@
 
   }
 
-  // &__copyright{
+  &__copyright{
 
-  // }
+    @include breakpoint-up(large){
+      grid-area: copyright;
+    }
+  }
 
 }

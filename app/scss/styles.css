@@ -495,7 +495,7 @@ button:hover, .button:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr) 2fr;
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "logo links1 links2 cta" "social links1 links2 cta";
+    grid-template-areas: "logo links1 links2 cta" "social links1 links2 copyright";
     justify-items: start;
   }
 }
@@ -570,5 +570,10 @@ button:hover, .button:hover {
     grid-area: cta;
     text-align: right;
     justify-self: end;
+  }
+}
+@media (min-width: 64em) {
+  .footer__copyright {
+    grid-area: copyright;
   }
 }/*# sourceMappingURL=styles.css.map */
