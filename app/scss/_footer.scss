@@ -86,6 +86,9 @@
 
     @include breakpoint-up(large){
       grid-area: cta;
+      // Make content align to the right
+      text-align: right;
+      justify-self: end; // justify self is when you only want it for a certain grid
     }
 
   }
