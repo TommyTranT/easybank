@@ -23,7 +23,10 @@
 
   &__logo{
     display: inline-block; // anchor elements are display inline by default so margin bottom wont show
-    margin-bottom: 1.875rem;
+    
+    @include breakpoint-down(medium){
+      margin-bottom: 1.875rem;
+    }
 
     @include breakpoint-up(large){
       grid-area: logo;
@@ -31,10 +34,13 @@
   }
 
   &__social{
-    margin-bottom: 1.875rem;
+    @include breakpoint-down(medium){
+      margin-bottom: 1.875rem;
+    }
 
     @include breakpoint-up(large){
       grid-area: social;
+      align-self: end; // makes content align to bottom of grid;
     }
 
 
@@ -66,11 +72,14 @@
     }
 
     &.col2{
-    margin-bottom: 1.875rem;
+      @include breakpoint-down(medium){
+        margin-bottom: 1.875rem;
+      }
+  
 
-    @include breakpoint-up(large){
-      grid-area: links2;
-    }
+      @include breakpoint-up(large){
+        grid-area: links2;
+      }
 
     }
   }
@@ -81,7 +90,10 @@
 
   &__cta{
     a.button{
-    margin-bottom: 1.875rem;
+      @include breakpoint-down(medium){
+        margin-bottom: 1.875rem;
+      }
+  
     }
 
     @include breakpoint-up(large){
