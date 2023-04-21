@@ -490,6 +490,15 @@ button:hover, .button:hover {
   padding: 2.5rem;
   text-align: center;
 }
+@media (min-width: 64em) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "logo links1 links2 cta" "social links1 links2 cta";
+    justify-items: start;
+  }
+}
 .footer a {
   color: hsl(0, 0%, 100%);
 }
@@ -497,8 +506,18 @@ button:hover, .button:hover {
   display: inline-block;
   margin-bottom: 1.875rem;
 }
+@media (min-width: 64em) {
+  .footer__logo {
+    grid-area: logo;
+  }
+}
 .footer__social {
   margin-bottom: 1.875rem;
+}
+@media (min-width: 64em) {
+  .footer__social {
+    grid-area: social;
+  }
 }
 .footer__social a {
   display: inline-block;
@@ -511,12 +530,32 @@ button:hover, .button:hover {
   flex-direction: column;
   align-items: center;
 }
+@media (min-width: 64em) {
+  .footer__links {
+    align-items: start;
+  }
+}
+@media (min-width: 64em) {
+  .footer__links.col1 {
+    grid-area: links1;
+  }
+}
 .footer__links.col2 {
   margin-bottom: 1.875rem;
+}
+@media (min-width: 64em) {
+  .footer__links.col2 {
+    grid-area: links2;
+  }
 }
 .footer a {
   line-height: 2.25;
 }
 .footer__cta a.button {
   margin-bottom: 1.875rem;
+}
+@media (min-width: 64em) {
+  .footer__cta {
+    grid-area: cta;
+  }
 }/*# sourceMappingURL=styles.css.map */
