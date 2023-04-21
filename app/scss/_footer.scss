@@ -1,4 +1,10 @@
 .footer {
+  background-color: $darkBlue;
+  color: $white;
+
+  a {
+    color: $white // changes all a ref links to white
+  }
 
   &__logo{
 
@@ -20,7 +26,7 @@
 
   &__cta{
     a.button{
-      
+
     }
   }
 
