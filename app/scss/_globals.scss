@@ -145,9 +145,10 @@ a,a:visited,a:hover {
 
 // Button
 button, .button {
+  position: relative;
   display: inline-block;
   padding: 0.875rem 2.1875rem; // adds height and width to the button. button is 14 pixels / 16 = 0.875rem
-  background: linear-gradient(to right, $limeGreen, $brightCyan);
+  background-image: linear-gradient(to right, $limeGreen, $brightCyan);
   border: 0;
   border-radius: 50px; // curved corners
   cursor: pointer;
@@ -155,9 +156,22 @@ button, .button {
   font-weight: 400;
   font-size: $font-sm;
   transition: opacity 300ms ease-in-out;
+  overflow: hidden;
 
-  &:hover {
-    opacity: 0.75;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.25);
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+  }
+
+  &:hover::before {
+    opacity: 1;
   }
 }
 
