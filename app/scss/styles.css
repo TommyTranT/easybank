@@ -578,7 +578,8 @@ button:hover, .button:hover {
   }
 }
 .footer__copyright {
-  font-size: 0.9375rem;
+  font-size: 0.8125rem;
+  color: hsl(233, 8%, 62%);
 }
 @media (min-width: 64em) {
   .footer__copyright {
