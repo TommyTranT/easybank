@@ -1,6 +1,6 @@
 https://www.youtube.com/watch?v=aoQ6S1a32j8
 
-3:19:00
+4:47:16
 
 * If you need to add flex to everything, just make it a class
 
@@ -35,3 +35,17 @@ for screen size 1024 pixels / 16 = 64em
 * for header fronts you want to add line-height to 1 and for other longer text you want it to be bigger like 1.3 depending on the design
 
 * before and after. what ever image is in after will appear ontop of before
+
+* When to decide if you want to use img tag or background for the image?
+  - If the image will have a different crop for mobile and desktop than use background image
+
+* Grid columns
+To create columns in grid we have to use the style
+
+display: grid;
+grid-template-columns: 1fr // This creates 1 column
+grid-template-columns: repeat(2, 1fr) // This creates 2 column
+grid-template-columns: repeat( 4, 1fr) // This creates 4 column with the same width spaced evenly
+
+* Rem is more accessible to peoples browser where as pixels just remain the same. (change browser font size, zoom in, etc)
+
