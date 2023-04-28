@@ -5,16 +5,20 @@
   padding: 2.5rem;
   text-align: center;
   
-  @include breakpoint-up(large) {
 
-    // Trying grid template for footer desktop
-    display: grid;
-    grid-template-columns: repeat(3, 1fr) 2fr; // 3 columns with same width and 1 column with twice the width
-    grid-template-rows: 1fr auto; // 2 rows with the same height
-    grid-template-areas: 
-      "logo links1 links2 cta"
-      "social links1 links2 copyright";
-    justify-items: start; // makes content in each grid to the left
+
+  .container {
+    @include breakpoint-up(large) {
+
+      // Trying grid template for footer desktop
+      display: grid;
+      grid-template-columns: repeat(3, 1fr) 2fr; // 3 columns with same width and 1 column with twice the width
+      grid-template-rows: 1fr auto; // 2 rows with the same height
+      grid-template-areas: 
+        "logo links1 links2 cta"
+        "social links1 links2 copyright";
+      justify-items: start; // makes content in each grid to the left
+    }
   }
 
   a {
