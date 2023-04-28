@@ -90,10 +90,7 @@
 
     }
     a {
-
-      @include breakpoint-down(medium){
-        line-height: 2.25;
-      }
+      line-height: 2.25;
     }
   }
 

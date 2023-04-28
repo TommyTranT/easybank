@@ -560,10 +560,8 @@ button:hover, .button:hover {
     grid-area: links2;
   }
 }
-@media (max-width: 63.9375em) {
-  .footer__links a {
-    line-height: 2.25;
-  }
+.footer__links a {
+  line-height: 2.25;
 }
 @media (max-width: 63.9375em) {
   .footer__cta a.button {
